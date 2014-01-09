@@ -20,72 +20,104 @@ html
   body
 
     #main
-      #banner
+      #banner.project
         .title
           tt= "-> "
           | Coffee-JS
+        mixin site("https://github.com/coffee-js/")
         .about
-        mixin repo("https://github.com/coffee-js/")
+          p 爱好语法糖. 希望新技术更快被个人开发者熟悉
 
       .project
         .title CoffeeScript 中文首页
         mixin site("http://coffee-script.org")
         mixin repo("https://github.com/coffee-js/coffee-script")
         .about
-          p 呃.
-          p 呃.
+          p 目前只翻译了一小部分, 我自己投入的时间其实比较少, 工作忙, 小差多
+          p 考虑到国内加入 CoffeeScript 的人可能很多, 稍微要加快啦
+          p
+            | 需要翻译的内容在
+            tt documentation
+            | 目录下, 按照
+            tt Cakefile
+            | 生成文件就好了
           
       .project
         .title MoonScript 中文首页
         mixin site("http://moon-script.org")
         mixin repo("https://github.com/coffee-js/moonscript")
         .about
+          p 页面刚刚开始翻译, 只是把站点假设的问题解决了
+          p
+            | 翻译主要是对
+            tt docs/
+            | 目录下的两个
+            tt md
+            | 文件进行翻译
+          p 生成代码的步骤将在另外一个仓库进行, 目前在 OS X 上测试了
+          p 详细的站点编译过程我留了比较粗略的笔记, 主要关于几个坑
+          p: a(href="http://blog.segmentfault.com/jiyinyiyong/1190000000382229").
+            http://blog.segmentfault.com/jiyinyiyong/1190000000382229
+          p 作者的便已脚本不完整的, 所幸也简单, 摸索下还算能完成
+          p 稍后会渐渐投入时间进行一些翻译, 首页这么点当然是自己来
           
       .project
         .title Node.js 中文索引页面
         mixin site("http://nodejs-china.org/")
         mixin repo("https://github.com/coffee-js/nodejs-china.org")
         .about
+          p 只是一些简单的索引, 以及一些 302 跳转的子域名
+          p 也可以 fork 仓库上的页面来进行美化和添加资源啦
           
       .project
         .title Lua 中文索引页面
         mixin site("http://lua-china.org")
         mixin repo("https://github.com/coffee-js/lua-china")
         .about
+          p 还没弄好, 打算山寨一个 Lua.org
 
       .project
         .title How to build Single Page Applications
         mixin site("http://coffee-js.github.io/how-to-spa/")
         mixin repo("https://github.com/coffee-js/how-to-spa")
         .about
+          p 单页面应用相关资源整理, 目前几乎什么都没有吧
+          p 采用 Markdown 文件在前端编译的方式部署的, 所以只要编辑 Markdown
 
       .project
-        .title How to build Single Page Applications
+        .title CoffeeScript Translations
         mixin site("http://translations.coffee-script.org/")
         mixin repo("https://github.com/coffee-js/coffee-translations")
         .about
+          p 涉及的一些正在编译的 CoffeeScript 资源的列表
+          p 目前很不完善
 
       .project
         .title Clojure Resources
         mixin site("http://coffee-js.github.com/clojure-learning/page/")
         mixin repo("https://github.com/coffee-js/clojure-learning")
         .about
+          p 从前收集的 Clojure 和 ClojureScript 的资源, 很久没更新了
 
       .project
         .title CoffeeScript Resources
         mixin site("http://coffee-js.github.io/coffee-index/")
         mixin repo("https://github.com/coffee-js/coffee-index")
         .about
+          p 也很久没更新了, 目前打算迁移仓库到子域名, 原先的内容暂时不可用
 
       .project
         .title Node Wiki
         mixin repo("https://github.com/coffee-js/node-wiki")
         .about
+          p 一些 Node.js 资源的整理, 不如 nodeclub Wiki 上来得方便
+          p 不过还是打算继续折腾一下, 或者还是以 Wiki 为主了
 
       .project
         .title History of Lisp Translation
         mixin repo("https://github.com/coffee-js/history-of-lisp")
         .about
+          p 个人尝试后没能继续的一些翻译内容
 
       include disqus.html
       include ga.html

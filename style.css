@@ -8,7 +8,7 @@ body {
     font-family: Optima, "Hiragino Sans GB W3";
     line-height: 40px;
     font-size: 18px;
-    padding: 100px 0 200px;
+    padding-top: 100px;
 }
 
 a {
@@ -38,8 +38,6 @@ tt {
 }
 
 #banner .repo {
-    color: hsl(0, 0%, 67%);
-    margin-left: 50px;
 }
 
 .project {

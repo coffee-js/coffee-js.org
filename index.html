@@ -9,12 +9,14 @@
   </head>
   <body>
     <div id="main">
-      <div id="banner">
+      <div id="banner" class="project">
         <div class="title">
           <tt>-&gt; </tt>Coffee-JS
         </div>
-        <div class="about"></div>
-        <div class="repo">Repo <a href="https://github.com/coffee-js/" target="_blank">https://github.com/coffee-js/</a>
+        <div class="site">Site <a href="https://github.com/coffee-js/" target="_blank">https://github.com/coffee-js/</a>
+        </div>
+        <div class="about">
+          <p>爱好语法糖. 希望新技术更快被个人开发者熟悉</p>
         </div>
       </div>
       <div class="project">
@@ -24,8 +26,12 @@
         <div class="repo">Repo <a href="https://github.com/coffee-js/coffee-script" target="_blank">https://github.com/coffee-js/coffee-script</a>
         </div>
         <div class="about">
-          <p>呃.</p>
-          <p>呃.</p>
+          <p>目前只翻译了一小部分, 我自己投入的时间其实比较少, 工作忙, 小差多</p>
+          <p>考虑到国内加入 CoffeeScript 的人可能很多, 稍微要加快啦</p>
+          <p>需要翻译的内容在
+            <tt>documentation</tt>目录下, 按照
+            <tt>Cakefile</tt>生成文件就好了
+          </p>
         </div>
       </div>
       <div class="project">
@@ -34,7 +40,18 @@
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/moonscript" target="_blank">https://github.com/coffee-js/moonscript</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>页面刚刚开始翻译, 只是把站点假设的问题解决了</p>
+          <p>翻译主要是对
+            <tt>docs/</tt>目录下的两个
+            <tt>md</tt>文件进行翻译
+          </p>
+          <p>生成代码的步骤将在另外一个仓库进行, 目前在 OS X 上测试了</p>
+          <p>详细的站点编译过程我留了比较粗略的笔记, 主要关于几个坑</p>
+          <p><a href="http://blog.segmentfault.com/jiyinyiyong/1190000000382229">http://blog.segmentfault.com/jiyinyiyong/1190000000382229</a></p>
+          <p>作者的便已脚本不完整的, 所幸也简单, 摸索下还算能完成</p>
+          <p>稍后会渐渐投入时间进行一些翻译, 首页这么点当然是自己来</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">Node.js 中文索引页面</div>
@@ -42,7 +59,10 @@
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/nodejs-china.org" target="_blank">https://github.com/coffee-js/nodejs-china.org</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>只是一些简单的索引, 以及一些 302 跳转的子域名</p>
+          <p>也可以 fork 仓库上的页面来进行美化和添加资源啦</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">Lua 中文索引页面</div>
@@ -50,7 +70,9 @@
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/lua-china" target="_blank">https://github.com/coffee-js/lua-china</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>还没弄好, 打算山寨一个 Lua.org</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">How to build Single Page Applications</div>
@@ -58,15 +80,21 @@
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/how-to-spa" target="_blank">https://github.com/coffee-js/how-to-spa</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>单页面应用相关资源整理, 目前几乎什么都没有吧</p>
+          <p>采用 Markdown 文件在前端编译的方式部署的, 所以只要编辑 Markdown</p>
+        </div>
       </div>
       <div class="project">
-        <div class="title">How to build Single Page Applications</div>
+        <div class="title">CoffeeScript Translations</div>
         <div class="site">Site <a href="http://translations.coffee-script.org/" target="_blank">http://translations.coffee-script.org/</a>
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/coffee-translations" target="_blank">https://github.com/coffee-js/coffee-translations</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>涉及的一些正在编译的 CoffeeScript 资源的列表</p>
+          <p>目前很不完善</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">Clojure Resources</div>
@@ -74,7 +102,9 @@
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/clojure-learning" target="_blank">https://github.com/coffee-js/clojure-learning</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>从前收集的 Clojure 和 ClojureScript 的资源, 很久没更新了</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">CoffeeScript Resources</div>
@@ -82,19 +112,26 @@
         </div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/coffee-index" target="_blank">https://github.com/coffee-js/coffee-index</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>也很久没更新了, 目前打算迁移仓库到子域名, 原先的内容暂时不可用</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">Node Wiki</div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/node-wiki" target="_blank">https://github.com/coffee-js/node-wiki</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>一些 Node.js 资源的整理, 不如 nodeclub Wiki 上来得方便</p>
+          <p>不过还是打算继续折腾一下, 或者还是以 Wiki 为主了</p>
+        </div>
       </div>
       <div class="project">
         <div class="title">History of Lisp Translation</div>
         <div class="repo">Repo <a href="https://github.com/coffee-js/history-of-lisp" target="_blank">https://github.com/coffee-js/history-of-lisp</a>
         </div>
-        <div class="about"></div>
+        <div class="about">
+          <p>个人尝试后没能继续的一些翻译内容</p>
+        </div>
       </div>    <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
