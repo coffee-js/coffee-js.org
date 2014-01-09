@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Optima, "Hiragino Sans GB W3";
+    line-height: 40px;
+    font-size: 18px;
+    padding: 100px 0 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+tt {
+    font-family: Monaco;
+}
+
+#main {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#banner {}
+
+#banner .title {
+    font-size: 50px;
+    color: hsl(240, 100%, 88%);
+    font-family: "Gill Sans";
+    line-height: 100px;
+}
+
+#banner .repo {
+    color: hsl(0, 0%, 67%);
+    margin-left: 50px;
+}
+
+.project {
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.project .title {
+    margin-left: -40px;
+    line-height: 80px;
+    font-size: 30px;
+}
+
+.project .repo {}
+
+.project .site {}
+
+.project .about {
+    color: hsl(0, 0%, 61%);
+}
