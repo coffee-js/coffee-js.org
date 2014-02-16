@@ -17,16 +17,15 @@ html
     meta(name="author", content="http://google.com/+jiyinyiyong?rel=author")
     meta(name="description", content="Project index of Coffee-JS")
     link(rel="stylesheet", href="style.css")
+    link(rel="icon", type="image/png", href="http://logo.coffee-js.org/coffee-js.png")
   body
 
     #main
-      #banner.project
-        .title
-          tt= "-> "
-          | Coffee-JS
-        mixin site("https://github.com/coffee-js/")
+      #banner
+        img(src='http://logo.coffee-js.org/coffee-js.png').logo
         .about
-          p 爱好语法糖. 希望新技术更快被个人开发者熟悉
+          p Coffee-JS 首页
+        mixin site("https://github.com/coffee-js/")
 
       .project
         .title CoffeeScript 中文首页
@@ -58,7 +57,7 @@ html
           p 详细的站点编译过程我留了比较粗略的笔记, 主要关于几个坑
           p: a(href="http://blog.segmentfault.com/jiyinyiyong/1190000000382229").
             http://blog.segmentfault.com/jiyinyiyong/1190000000382229
-          p 作者的便已脚本不完整的, 所幸也简单, 摸索下还算能完成
+          p 作者的编译脚本不完整的, 所幸也简单, 摸索下还算能完成
           p 稍后会渐渐投入时间进行一些翻译, 首页这么点当然是自己来
           
       .project
