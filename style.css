@@ -8,6 +8,7 @@ body {
     font-family: Optima, "Hiragino Sans GB W3";
     line-height: 40px;
     font-size: 18px;
+    background: hsl(0, 7%, 92%);
 }
 
 a {
@@ -25,9 +26,22 @@ tt {
 #main {
     width: 900px;
     margin: 0 auto;
+    padding: 0px 40px;
+    background: white;
+    box-shadow: 2px 0px 14px hsla(0, 0%, 27%, 0.38);
 }
 
-#banner {}
+#banner {
+    vertical-align: middle;
+}
+
+#banner a {
+}
+
+#banner img {
+    margin: auto;
+    display: block;
+}
 
 #banner .title {
     font-size: 50px;
@@ -42,7 +56,7 @@ tt {
 .project {
     margin: 40px auto;
     background-color: white;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 80px;
 }
 
 .project .title {
