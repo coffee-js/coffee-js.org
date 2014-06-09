@@ -9,10 +9,10 @@ mixin repo(link)
     = "Repo "
     a(href=link, target="_blank")= link
 
-doctype 5
+doctype html
 html
   head
-    title= "-> Coffee-JS"
+    title= "Coffee-JS"
     meta(charset="utf-8")
     meta(name="author", content="http://google.com/+jiyinyiyong?rel=author")
     meta(name="description", content="Project index of Coffee-JS")
@@ -38,7 +38,7 @@ html
             | 目录下, 按照
             tt Cakefile
             | 生成文件就好了
-          
+
       .project
         .title MoonScript 中文首页
         mixin site("http://moon-script.org")
@@ -57,7 +57,7 @@ html
             http://blog.segmentfault.com/jiyinyiyong/1190000000382229
           p 作者的编译脚本不完整的, 所幸也简单, 摸索下还算能完成
           p 稍后会渐渐投入时间进行一些翻译, 首页这么点当然是自己来
-          
+
       .project
         .title Node.js 中文索引页面
         mixin site("http://nodejs-china.org/")
@@ -65,7 +65,7 @@ html
         .about
           p 只是一些简单的索引, 以及一些 302 跳转的子域名
           p 也可以 fork 仓库上的页面来进行美化和添加资源啦
-          
+
       .project
         .title Lua 中文索引页面
         mixin site("http://lua-china.org")
@@ -130,5 +130,5 @@ html
         .about
           p 个人尝试后没能继续的一些翻译内容
 
-      include disqus.html
-      include ga.html
+      //- include disqus.html
+      //- include ga.html
